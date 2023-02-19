@@ -80,7 +80,7 @@ input {
     color: black;
 }
 
-input[type="button"] {
+input[type="submit"] {
     background-color: #9395D3;
     cursor: pointer;
 }
