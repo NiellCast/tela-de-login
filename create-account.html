@@ -4,37 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/reset-account-style.css">
+    <link rel="stylesheet" href="assets/css/create-account-style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
-    <title>Reset Password</title>
+
+    <title>Sign In</title>
 </head>
 <body class="centralizacao">
     <main>
         <section class="titulo divisoria centralizacao">
-            <h1>Reset Password</h1>
+            <h1>Sign In</h1>
         </section>
 
         <section class="form-container divisoria">
-            <form action="#" class="centralizacao">
+            <form class="centralizacao">
                 <section class="form-group centralizacao">
+                    <input type="text" id="username" placeholder="Username" required autofocus>
+                    <input type="password" id="password" placeholder="Password" required>
                     <input type="email" name="email" id="email" placeholder="Email" required>
                 </section>
 
                 <section class="form-group centralizacao">
-                    <input type="submit" value="Reset Password" class="ampliar">
+                    <input type="button" value="Sign in" class="ampliar" id="btn-cadastrar">
                 </section>
+
+                <p id="resposta"></p>
 
                 <section class="form-group">
                     <ul>
-                        <li class="ampliar"><a href="create-account.html" rel="next" target="_self">Create an account</a></li>
-                        <li class="ampliar"><a href="index.html" rel="prev" target="_self">Back to login</a></li>
+                        <li class="ampliar"><a href="index.html" rel="prev" target="_self" id="link-ja-possui-conta">Already have an account?</a></li>
                     </ul>
                 </section>
             </form>
         </section>
     </main>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

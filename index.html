@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index-style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
     <title>Login</title>
 </head>
 <body class="centralizacao">
@@ -16,8 +20,8 @@
         <section class="form-container divisoria">
             <form action="#" class="centralizacao">
                 <section class="form-group centralizacao">
-                    <input type="text" class="form-username" id="username" placeholder="Username" required>
-                    <input type="password" class="form-password" id="password" placeholder="Password" required>
+                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="password" id="password" placeholder="Password" required>
                 </section>
 
                 <section class="form-group centralizacao">
@@ -26,12 +30,13 @@
 
                 <section class="form-group">
                     <ul>
-                        <li class="ampliar"><a href="#">Create an account</a></li>
-                        <li class="ampliar"><a href="#">Forgot your password?</a></li>
+                        <li class="ampliar"><a href="create-account.html" rel="next" target="_self">Create an account</a></li>
+                        <li class="ampliar"><a href="reset-pass.html" rel="next" target="_self">Forgot your password?</a></li>
                     </ul>
                 </section>
             </form>
         </section>
     </main>
+
 </body>
 </html>
