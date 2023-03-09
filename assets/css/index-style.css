@@ -113,6 +113,10 @@ ul {
     align-items: center;
 }
 
-.ampliar:hover {
-    transform: scale(1.005);
+.efeito {
+    transition: transform 0.3s ease-in-out;
+}
+
+.efeito:hover {
+    transform: scale(1.03);
 }
